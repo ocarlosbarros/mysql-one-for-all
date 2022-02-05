@@ -1,7 +1,7 @@
 {
   "coluna_usuario": "firstName",
   "tabela_que_contem_usuario": "Users",
-  "coluna_plano": "planType",
+  "coluna_plano": "planName",
   "tabela_que_contem_plano": "Plans",
   "coluna_historico_de_reproducoes": "playback_date",
   "tabela_que_contem_historico_de_reproducoes": "Histories",
