@@ -5,7 +5,7 @@ SELECT title AS nome_musica,
         WHEN title LIKE '%Inner Fire%' THEN REPLACE(title, 'Inner Fire', 'Project')
         WHEN title LIKE '%Silly%' THEN REPLACE(title, 'Silly', 'Nice')
         WHEN title LIKE '%Circus%' THEN REPLACE(title, 'Circus', 'Pull Request')
-	ELSE title
-        END AS novo_nome
+	    END AS novo_nome
 	FROM SpotifyClone.Songs
+    HAVING NOT novo_nome IS NULL
     ORDER BY title;
